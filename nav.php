@@ -11,7 +11,7 @@
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav ">
 					<li class="active"><a href="index.php">Lista de empleados</a></li>
-					<li><a href="add.php">Agregar Nuevo Empleado</a></li>
+					<li><a href="add.php">Crear Empleado</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 	</div>

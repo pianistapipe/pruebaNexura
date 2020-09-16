@@ -62,7 +62,7 @@ include("conexion.php");
 				</tr>
 				<?php
 				if($filter){
-							
+				 $filter="";
 					$sql = mysqli_query($con, "SELECT * FROM empleados WHERE id='$filter' ORDER BY id ASC");
 				}else{
 					$sql = mysqli_query($con, "SELECT * FROM empleados ORDER BY id ASC");

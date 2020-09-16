@@ -50,13 +50,13 @@ Email	 	 : info@obedalvarado.pw
 				$row = mysqli_fetch_assoc($sql);
 			}
 			if(isset($_POST['save'])){
-				$id		     = mysqli_real_escape_string($con,(strip_tags($_POST["id"],ENT_QUOTES)));//Escanpando caracteres 
-				$nombre		     = mysqli_real_escape_string($con,(strip_tags($_POST["nombre"],ENT_QUOTES)));//Escanpando caracteres 
-				$email	 = mysqli_real_escape_string($con,(strip_tags($_POST["email"],ENT_QUOTES)));//Escanpando caracteres 
-				$sexo	 = mysqli_real_escape_string($con,(strip_tags($_POST["sexo"],ENT_QUOTES)));//Escanpando caracteres 
-				$area_id	     = mysqli_real_escape_string($con,(strip_tags($_POST["area_id"],ENT_QUOTES)));//Escanpando caracteres 
-				$boletin		 = mysqli_real_escape_string($con,(strip_tags($_POST["boletin"],ENT_QUOTES)));//Escanpando caracteres 
-				$descripcion		 = mysqli_real_escape_string($con,(strip_tags($_POST["descripcion"],ENT_QUOTES)));//Escanpando caracteres 
+				$id		     = mysqli_real_escape_string($con,(strip_tags($_POST["id"],ENT_QUOTES)));
+				$nombre		     = mysqli_real_escape_string($con,(strip_tags($_POST["nombre"],ENT_QUOTES)));
+				$email	 = mysqli_real_escape_string($con,(strip_tags($_POST["email"],ENT_QUOTES)));
+				$sexo	 = mysqli_real_escape_string($con,(strip_tags($_POST["sexo"],ENT_QUOTES)));
+				$area_id	     = mysqli_real_escape_string($con,(strip_tags($_POST["area_id"],ENT_QUOTES)));
+				$boletin		 = mysqli_real_escape_string($con,(strip_tags($_POST["boletin"],ENT_QUOTES)));
+				$descripcion		 = mysqli_real_escape_string($con,(strip_tags($_POST["descripcion"],ENT_QUOTES)));
 				
 				
 				$update = mysqli_query($con, "UPDATE empleados SET nombre='$nombre', email='$email', sexo='$sexo', area_id='$area_id', boletin='$boletin', descripcion='$descripcion', id='$id' WHERE id='$nik'") or die(mysqli_error());
@@ -78,36 +78,42 @@ Email	 	 : info@obedalvarado.pw
 						<input type="text" name="id" value="<?php echo $row ['id']; ?>" class="form-control" placeholder="NIK" required>
 					</div>
 				</div>
+
 				<div class="form-group">
 					<label class="col-sm-3 control-label">Nombre</label>
 					<div class="col-sm-4">
 						<input type="text" name="nombre" value="<?php echo $row ['nombre']; ?>" class="form-control" placeholder="Nombre" required>
 					</div>
 				</div>
+
 				<div class="form-group">
 					<label class="col-sm-3 control-label">email</label>
 					<div class="col-sm-4">
 						<input type="text" name="email" value="<?php echo $row ['email']; ?>" class="form-control" placeholder="email" required>
 					</div>
 				</div>
+
 				<div class="form-group">
 					<label class="col-sm-3 control-label">sexo</label>
 					<div class="col-sm-4">
-						<input type="text" name="sexo" value="<?php echo $row ['sexo']; ?>" class="input-group date form-control" date="" data-date-format="yyyy-mm-dd" placeholder="0000-00-00" required>
+						<input type="text" name="sexo" value="<?php echo $row ['sexo']; ?>">
 					</div>
 				</div>
+
 				<div class="form-group">
 					<label class="col-sm-3 control-label">Area</label>
 					<div class="col-sm-3">
 						<textarea name="area_id" class="form-control" placeholder="area_id"><?php echo $row ['area_id']; ?></textarea>
 					</div>
 				</div>
+
 				<div class="form-group">
 					<label class="col-sm-3 control-label">Descripcion</label>
 					<div class="col-sm-3">
 						<input type="text" name="descripcion" value="<?php echo $row ['descripcion']; ?>" class="form-control" placeholder="Teléfono" required>
 					</div>
 				</div>
+
 				<div class="form-group">
 					<label class="col-sm-3 control-label">&nbsp;</label>
 					<div class="col-sm-6">
@@ -115,6 +121,7 @@ Email	 	 : info@obedalvarado.pw
 						<a href="index.php" class="btn btn-sm btn-danger">Cancelar</a>
 					</div>
 				</div>
+				
 			</form>
 		</div>
 	</div>
