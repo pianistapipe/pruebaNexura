@@ -59,7 +59,7 @@ Email	 	 : info@obedalvarado.pw
 				}
 			}
 			?>
-			
+			       
 			<table class="table table-striped table-condensed">
 				<tr>
 					<th width="20%">id</th>

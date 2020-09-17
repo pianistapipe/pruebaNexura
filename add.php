@@ -58,7 +58,7 @@ Email	 	 : info@obedalvarado.pw
 							echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Bien hecho! Los datos han sido guardados con éxito.</div>';
 						}else{
 							echo '<div class="alert alert-danger alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Error. No se pudo guardar los datos !</div>';
-						}
+						} 
 
 				/*}else{
 					echo '<div class="alert alert-danger alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Error. id exite!</div>';
@@ -66,7 +66,7 @@ Email	 	 : info@obedalvarado.pw
 			}
 			?>
 
-			<form class="form-horizontal" action="" method="post">
+				<form class="form-horizontal" action="" method="post">
 				
 
 				<div class="form-group">

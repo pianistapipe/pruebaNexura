@@ -7,7 +7,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand visible-xs-block visible-sm-block" href="">Inicio</a>
-			</div>
+			</div>    
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav ">
 					<li class="active"><a href="index.php">Lista de empleados</a></li>
