@@ -70,6 +70,7 @@ Email	 	 : info@obedalvarado.pw
 				
 
 				<div class="form-group">
+					
 					<label class="col-sm-3 control-label">Nombre completo</label>
 					<div class="col-sm-4">
 						<input type="text" name="nombre" class="form-control" placeholder="Nombre completo" required>
